@@ -1,0 +1,65 @@
+@import "../../app.scss";
+.div1{
+display: flex;
+justify-content: center;
+height: 100vh;
+background-color: var(--card-bg);
+margin-top: 200px;
+position: relative;
+margin-bottom: 100px;
+
+@include mobile{
+   
+    margin-bottom: 0;
+}
+
+.attentionWrapper{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 30px;
+
+    p{
+        margin-top: 100px;
+        position: absolute;
+        bottom: 80px;
+        font-size: 18px;
+        line-height: 38px;
+        @include mobile{
+           bottom: 50px;
+        }
+       
+        
+    }
+    
+    
+    .line{
+        width: 2px;
+        min-height: 300px;
+        background-color: #fff;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+
+        @include mobile{
+            top: 20%;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+        
+    
+        
+        
+    }
+    h2{
+        margin-top: 50px;
+        color: #fff;
+        font-size: 30px;
+    }
+
+}
+
+
+}

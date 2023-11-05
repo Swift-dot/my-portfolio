@@ -1,0 +1,159 @@
+@import "../../app.scss";
+ .portfolio{
+    position: relative;
+    margin-bottom: 20px;
+
+.attention{
+    text-align: justify;
+    font-size: 18px;
+    max-width: 80%;
+    margin: 50px auto;
+    line-height: 40px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+    .progress{
+        position: sticky;
+        top: 0;
+        left: 0;
+        padding: 50px;
+        text-align: center;
+        color: var(--primary-color);
+        font-size: 40px;
+
+        h1{
+            color: var(--primary-color);
+        }
+
+        @include mobile{
+            padding-top: calc(100vh - 100px);
+            font-size: 20px;
+            
+        }
+
+
+
+
+        .progressBar{
+            height: 5px;
+            margin-top: 10px;
+            background-color: white;
+        }
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        
+       
+       
+
+        .wrapper{
+            max-width: 1366px;
+            margin: auto;
+            display: flex;
+            height: 100%;
+            gap: 50px;
+            justify-content: center;
+            align-items: center;
+
+            @include mobile{
+                margin: 0 30px;
+                flex-direction: column;
+            }
+
+            @include tablet{
+
+                margin: 0 30px;
+            }
+        }
+
+       
+        .imageContainer{
+            flex: 2;
+            height: 400px;
+            width: 100%;
+            
+            @include mobile{
+                max-width: 400px;
+             }
+             @include tablet{
+
+                flex: 2;
+            }
+
+
+
+            img{
+                
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                 object-position: 30%;
+                 @include tablet{
+
+                    object-position: 20% 40%;
+                }
+            }
+           
+        }
+       
+
+        .textContainer{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            @include mobile{
+                transform: none !important;
+                margin: 0 30px;
+               
+             }
+
+            h2{
+                font-size: 30px;
+                font-weight: 600;
+                color: #fff;
+                // font-family: 'Poppins', sans-serif;
+
+                @include mobile{
+                    font-size: 18px;
+                }
+                @include tablet{
+
+                    font-size: 25px;
+                }
+            }
+            p{
+                font-size: 15px;
+                text-align: justify;
+                line-height: 30px;
+                color: lightgray;
+                // font-family: 'Poppins', sans-serif;
+                 
+                @include mobile{
+                    font-size: 14px;
+                    text-align: justify;
+                 }
+            }
+            button{
+                background-color: orange;
+                border: none;
+                padding: 10px;
+                width: 200px;
+                font-size: 20px;
+                font-weight: 500;
+                cursor: pointer;
+                border-radius: 10px;
+            }
+        }
+    }
+
+ }
+ 

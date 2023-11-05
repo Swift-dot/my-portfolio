@@ -1,0 +1,118 @@
+@import "../../app.scss";
+.contact{
+    height: 100%;
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+    overflow: hidden;
+
+    @include mobile{
+        margin: 0 20px;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+     }
+
+     @include tablet{
+        margin: 0 30px;
+    }
+
+    .textContainer{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        
+        @include mobile{
+            text-align: center;
+         }
+
+        h2{
+            font-size: 100px;
+            line-height: 90px;
+            // font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            color: lightgray;
+            @include mobile{
+                font-size: 25px;
+                line-height: 50px;
+             }
+             @include tablet{
+
+            font-size: 40px;
+            }
+        }
+        .item{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+    .formContainer{
+        flex: 1;
+        position: relative;
+
+        @include mobile{
+            width: 100%;
+            padding: 50px;
+            
+         }
+
+        .phoneSvg{
+            position: absolute;
+            margin: auto;
+            top: 0;
+            z-index: -1;
+           svg{
+            @include mobile{
+                width: 300px;
+                // margin: 30px;
+             }
+           }
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+           
+            
+
+            input, textarea{
+                background: transparent;
+                border: 1px solid white;
+                padding: 20px;
+                color: #fff;
+                border-radius: 5px;
+            }
+
+            button{
+                padding: 20px;
+                border: none;
+                background-color: var(--primary-color);
+                cursor: pointer;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.contactHead{
+    text-align: center;
+    margin: 70px 0;
+
+    h1{
+        font-size: 100px;
+        font-weight: 700;
+
+        @include mobile{
+            font-size: 40px;
+        }
+    }
+    p{
+        @include mobile{
+            font-size: 15px;
+        }
+    }
+}

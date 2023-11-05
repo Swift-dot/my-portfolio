@@ -1,0 +1,68 @@
+/* ======== google fonts ========= */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap");
+
+/* ======== css variables ============ */
+:root {
+  --primary-color: #f5a119;
+  --secondary-color: #020405;
+  --heading-color: #fff;
+  --body-bg: #000000;
+  --small-text-color: #acb2b2;
+  --font-name: "Montserrat", sans-serif;
+  --card-bg: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p {
+  color: var(--small-text-color);
+  font-size: 0.9rem;
+  line-height: 28px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--heading-color);
+  font-weight: 500;
+}
+
+
+html{
+    // scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
+}
+ 
+body {
+    background: var(--body-bg);
+    font-family: var(--font-name);
+    box-sizing: border-box;
+    overflow-x: hidden;
+    color: lightgray;
+  }
+    
+
+section{
+    min-height: 100vh;
+    scroll-snap-align: center;
+    
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+@mixin mobile{
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+@mixin tablet{
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
