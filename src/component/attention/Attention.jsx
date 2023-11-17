@@ -4,7 +4,7 @@ const Attention = () => {
   return (
     <div className='div1'>
          <div className="attentionWrapper">
-            <div className="line"></div>
+            
          <h2>From Concept to Creation</h2>
         
          <p>Explore a diverse portfolio that spans from sleek and responsive websites to captivating graphic designs. 
