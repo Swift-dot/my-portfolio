@@ -32,9 +32,9 @@ function App() {
       
       </section>
       
-     <div id="Services">
-        <Attention />
-      </div> 
+     // <div id="Services">
+     //    <Attention />
+     //  </div> 
       
       <section id="Portfolio" >
         <Portfolio />
